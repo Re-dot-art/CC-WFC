@@ -41,4 +41,4 @@ We put some experimental results here.
 
 
 **manually designed terrains**
-![result](./11111.png)
+![result](./hand_designed_terrains.png)
