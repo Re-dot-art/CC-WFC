@@ -29,6 +29,32 @@ We put some experimental results here.
 |Greediness Temperature, $T$|1.0|1.0|
 |Grid Size|$10\times5$|$9\times9$|
 
+
+> **Algorithm 1** Structural UED
+**Input:** Level buffer size $K$, level generator
+**Initialize:** Initialize policy $\pi(\phi)$, level buffer $\Lambda$, primitive-level regret matrix $R$
+
+**while** *not converged* **do**
+    Sample replay decision $d \sim P_D(d)$
+    **if** $d = 0$ **then**
+        (Optionally) Sample level $\theta$ from level generator guided by $R$
+        *(Otherwise, sample unguided level $\theta$)*
+    **else**
+        Sample a replay level, $\theta \sim \Lambda$
+    **end**
+    Collect policy trajectory $\tau$ on $\theta$
+    Update policy $\pi$ with rewards $\mathbf{R}(\tau)$
+    Compute primitive-level regret from trajectory $\tau$
+    Update regret matrix $R$ via Exponential Moving Average (EMA)
+    Recompute the global regret score $S$ for all levels in $\Lambda$ using updated $R$
+    **if** $d = 0$ **then**
+        Compute overall regret score $S$ for the new level $\theta$ using updated $R$
+        Update $\Lambda$ with $\theta$ if score $S$ meets threshold
+    **end**
+**end**
+> 
+
+
 **The main experimental results are as follows:**
 ![result](./eval_comparison_all_terrains.png)
 
