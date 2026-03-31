@@ -34,11 +34,13 @@ We put some experimental results here.
 
 **The ablation results are as follows:**
 ![result](./eval_ablation_global.png)
-
-![result](./eval_ablation_reward.png)
+Ablation Study of fine-grained regret
 
 ![result](./eval_ablation_connect.png)
+Ablation Study of connectivity constrain
 
+![result](./eval_ablation_reward.png)
+Ablation Study of graph-guided reward
 
 **manually designed terrains**
 ![result](./hand_designed_terrains.png)
