@@ -34,7 +34,7 @@ We put some experimental results here.
 
 ![result](./eval_comparison_all_terrains.png)
 
-**The ablation results were as follows:**
+**The ablation results are as follows:**
 ![result](./eval_ablation_global.png)
 
 ![result](./eval_ablation_reward.png)
