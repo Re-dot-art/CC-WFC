@@ -29,11 +29,19 @@ We put some experimental results here.
 |Greediness Temperature, $T$|1.0|1.0|
 |Grid Size|$10\times5$|$9\times9$|
 
+The pseudo-code of Structural UED algorithm
 
-> **Algorithm 1** Structural UED
-**Input:** Level buffer size $K$, level generator
+<div align="center">
+
+**Algorithm 1** Structural UED  
+
+**Input:** Level buffer size $K$, level generator  
+
 **Initialize:** Initialize policy $\pi(\phi)$, level buffer $\Lambda$, primitive-level regret matrix $R$
 
+</div>
+
+&nbsp;
 
 **while** *not converged* **do**  
 &nbsp;&nbsp;&nbsp;&nbsp;Sample replay decision $d \sim P_D(d)$  
@@ -56,26 +64,6 @@ We put some experimental results here.
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Update $\Lambda$ with $\theta$ if score $S$ meets threshold  
 &nbsp;&nbsp;&nbsp;&nbsp;**end**  
 **end**
-
-**while** *not converged* **do**  
-&nbsp;&nbsp;&nbsp;&nbsp;Sample replay decision $d \sim P_D(d)$  
-&nbsp;&nbsp;&nbsp;&nbsp;**if** $d = 0$ **then**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Optionally) Sample level $\theta$ from level generator guided by $R$  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(Otherwise, sample unguided level $\theta$)*  
-&nbsp;&nbsp;&nbsp;&nbsp;**else**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample a replay level, $\theta \sim \Lambda$  
-&nbsp;&nbsp;&nbsp;&nbsp;**end**  
-&nbsp;&nbsp;&nbsp;&nbsp;Collect policy trajectory $\tau$ on $\theta$  
-&nbsp;&nbsp;&nbsp;&nbsp;Update policy $\pi$ with rewards $\mathbf{R}(\tau)$  
-&nbsp;&nbsp;&nbsp;&nbsp;Compute primitive-level regret from trajectory $\tau$  
-&nbsp;&nbsp;&nbsp;&nbsp;Update regret matrix $R$ via Exponential Moving Average (EMA)  
-&nbsp;&nbsp;&nbsp;&nbsp;Recompute the global regret score $S$ for all levels in $\Lambda$ using updated $R$  
-&nbsp;&nbsp;&nbsp;&nbsp;**if** $d = 0$ **then**  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute overall regret score $S$ for the new level $\theta$ using updated $R$  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Update $\Lambda$ with $\theta$ if score $S$ meets threshold  
-&nbsp;&nbsp;&nbsp;&nbsp;**end**  
-**end**
-
 
 ## The main experimental results are as follows:
 ![result](./eval_comparison_all_terrains.png)
