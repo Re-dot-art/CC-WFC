@@ -34,7 +34,6 @@ The main experimental results are as follows:
 
 ![result](./eval_comparision_all_terrains.png)
 
-
 The ablation results were as follows:
 ![result](./eval_ablation_global.png)
 
