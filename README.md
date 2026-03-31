@@ -1,6 +1,6 @@
-# CC-WFC
-We put some experimental results here. 
+# Structural UED
 
+## Hyperparameters and experimental details
 *Table 2. Hyperparameters and experimental details.* 
 |Parameters| Visual Navigation in IsaacLab|JaxNav|
 |-|-:|-:|
@@ -29,55 +29,59 @@ We put some experimental results here.
 |Greediness Temperature, $T$|1.0|1.0|
 |Grid Size|$10\times5$|$9\times9$|
 
-The pseudo-code of Structural UED algorithm
+## The pseudo-code of Structural UED algorithm
 
-<div align="center">
-
-**Algorithm 1** Structural UED  
+**Algorithm 1** Structural UED
 
 **Input:** Level buffer size $K$, level generator  
-
 **Initialize:** Initialize policy $\pi(\phi)$, level buffer $\Lambda$, primitive-level regret matrix $R$
-
-</div>
-
-&nbsp;
 
 **while** *not converged* **do**  
 &nbsp;&nbsp;&nbsp;&nbsp;Sample replay decision $d \sim P_D(d)$  
-
 &nbsp;&nbsp;&nbsp;&nbsp;**if** $d = 0$ **then**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Optionally) Sample level $\theta$ from level generator guided by $R$  
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;*(Otherwise, sample unguided level $\theta$)*  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(Otherwise, sample unguided level $\theta$)  
 &nbsp;&nbsp;&nbsp;&nbsp;**else**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Sample a replay level, $\theta \sim \Lambda$  
 &nbsp;&nbsp;&nbsp;&nbsp;**end**  
-
 &nbsp;&nbsp;&nbsp;&nbsp;Collect policy trajectory $\tau$ on $\theta$  
 &nbsp;&nbsp;&nbsp;&nbsp;Update policy $\pi$ with rewards $\mathbf{R}(\tau)$  
 &nbsp;&nbsp;&nbsp;&nbsp;Compute primitive-level regret from trajectory $\tau$  
 &nbsp;&nbsp;&nbsp;&nbsp;Update regret matrix $R$ via Exponential Moving Average (EMA)  
 &nbsp;&nbsp;&nbsp;&nbsp;Recompute the global regret score $S$ for all levels in $\Lambda$ using updated $R$  
-
 &nbsp;&nbsp;&nbsp;&nbsp;**if** $d = 0$ **then**  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Compute overall regret score $S$ for the new level $\theta$ using updated $R$  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Update $\Lambda$ with $\theta$ if score $S$ meets threshold  
 &nbsp;&nbsp;&nbsp;&nbsp;**end**  
 **end**
 
-## The main experimental results are as follows:
-![result](./eval_comparison_all_terrains.png)
-Performance comparison of the proposed Structural UED and baselines on the hand-designed test terrain set
+## The updated experimental results
 
-## The ablation results are as follows:
+### The main experimental results are as follows:
+![result](./eval_comparison_all_terrains.png)
+<div align="center">
+Performance comparison of the proposed Structural UED and baselines on the hand-designed test terrain set.
+</div>
+
+### The ablation results are as follows:
 ![result](./eval_ablation_global.png)
-Ablation Study of fine-grained regret
+<div align="center">
+Ablation Study of fine-grained regret.
+</div>
 
 ![result](./eval_ablation_connect.png)
-Ablation Study of connectivity constrain
+<div align="center">
+Ablation Study of connectivity constrain.
+</div>
 
 ![result](./eval_ablation_reward.png)
-Ablation Study of graph-guided reward
+<div align="center">
+Ablation Study of graph-guided reward.
+</div>
 
-**manually designed terrains**
+## The hand-designed terrains
 ![result](./hand_designed_terrains.png)
+<div align="center">
+The hand-designed terrains for evaluation.
+</div>
+
