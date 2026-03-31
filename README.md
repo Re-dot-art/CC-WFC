@@ -32,7 +32,7 @@ We put some experimental results here.
 The main experimental results are as follows:
 ![result](./eval_academic.png)
 
-![result](./eval_comparision_all_terrains.png)
+![result](./eval_comparison_all_terrains.png)
 
 The ablation results were as follows:
 ![result](./eval_ablation_global.png)
