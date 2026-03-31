@@ -38,3 +38,7 @@ We put some experimental results here.
 ![result](./eval_ablation_reward.png)
 
 ![result](./eval_ablation_connect.png)
+
+
+**manually designed terrains**
+![result](./11111.png)
