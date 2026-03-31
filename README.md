@@ -29,12 +29,12 @@ We put some experimental results here.
 |Greediness Temperature, $T$|1.0|1.0|
 |Grid Size|$10\times5$|$9\times9$|
 
-The main experimental results are as follows:
+**The main experimental results are as follows:**
 ![result](./eval_academic.png)
 
 ![result](./eval_comparison_all_terrains.png)
 
-The ablation results were as follows:
+**The ablation results were as follows:**
 ![result](./eval_ablation_global.png)
 
 ![result](./eval_ablation_reward.png)
