@@ -80,7 +80,7 @@ Ablation Study of graph-guided reward.
 </div>
 
 ## The hand-designed terrains
-![result](./hand_designed_terrains.png)
+![result](./terrains.png)
 <div align="center">
 The hand-designed terrains for evaluation.
 </div>
