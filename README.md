@@ -30,8 +30,6 @@ We put some experimental results here.
 |Grid Size|$10\times5$|$9\times9$|
 
 **The main experimental results are as follows:**
-![result](./eval_academic.png)
-
 ![result](./eval_comparison_all_terrains.png)
 
 **The ablation results are as follows:**
@@ -39,3 +37,4 @@ We put some experimental results here.
 
 ![result](./eval_ablation_reward.png)
 
+![result](./eval_ablation_connect.png)
