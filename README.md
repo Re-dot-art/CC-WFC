@@ -116,7 +116,6 @@ Deploying the trained policy on a physical robot in a real-world scenario that w
   </tr>
 </table>
 
-## The large-scale terrain experiment
 <table>
   <tr>
     <td><video src="./large_terrain_1.mp4" controls width="100%"></video></td>
@@ -133,6 +132,22 @@ Deploying the policy trained on the small terrains (5*10) on a large terrain (10
 <div align="center">
 The test set for JaxNav.
 </div>
+
+## The large-scale terrain experiment
+<table>
+  <tr>
+    <td width="33%" align="center">
+      <img src="./large_terrain_1.gif" width="100%">
+    </td>
+    <td width="33%" align="center">
+      <img src="./large_terrain_2.gif" width="100%">
+    </td>
+    <td width="33%" align="center">
+      <img src="./large_terrain_3.gif" width="100%">
+    </td>
+  </tr>
+</table>
+
 
 ![result](./jaxnav_solve_rate_curve.png)
 <div align="center">
