@@ -94,9 +94,9 @@ Deploying the trained policy on a physical robot in a real-world scenario that w
 ## The large-scale terrain experiment
 <table>
   <tr>
-    <td><video src="large_terrain_1.mp4" controls width="100%"></video></td>
-    <td><video src="large_terrain_2.mp4" controls width="100%"></video></td>
-    <td><video src="large_terrain_3.mp4" controls width="100%"></video></td>
+    <td><video src="./large_terrain_1.mp4" controls width="100%"></video></td>
+    <td><video src="./large_terrain_2.mp4" controls width="100%"></video></td>
+    <td><video src="./large_terrain_3.mp4" controls width="100%"></video></td>
   </tr>
 </table>
 <div align="center">
