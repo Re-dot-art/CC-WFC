@@ -91,6 +91,10 @@ The hand-designed terrains for evaluation.
 Deploying the trained policy on a physical robot in a real-world scenario that was unseen during training.
 </div>
 
+[![Demo 1]](./large_terrain_1.mp4)
+[![Demo 2]](./large_terrain_2.mp4)
+[![Demo 3]](./large_terrain_3.mp4)
+
 
 <table>
   <tr>
