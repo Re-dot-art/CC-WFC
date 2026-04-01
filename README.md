@@ -85,6 +85,13 @@ Ablation Study of graph-guided reward.
 The hand-designed terrains for evaluation.
 </div>
 
+## The real-world experiment
+![result](./real_world.mp4)
+<div align="center">
+Deploying the trained policy on a physical robot in a real-world scenario that was unseen during training.
+</div>
+
+
 ## The JacNav experimental results
 ![result](./jaxnav_testset.png)
 <div align="center">
