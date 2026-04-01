@@ -91,6 +91,27 @@ The hand-designed terrains for evaluation.
 Deploying the trained policy on a physical robot in a real-world scenario that was unseen during training.
 </div>
 
+
+<table>
+  <tr>
+    <td width="33%">
+      <video controls muted width="100%">
+        <source src="./large_terrain_1.mp4" type="video/mp4">
+      </video>
+    </td>
+    <td width="33%">
+      <video controls muted width="100%">
+        <source src="./large_terrain_2.mp4" type="video/mp4">
+      </video>
+    </td>
+    <td width="33%">
+      <video controls muted width="100%">
+        <source src="./large_terrain_3.mp4" type="video/mp4">
+      </video>
+    </td>
+  </tr>
+</table>
+
 ## The large-scale terrain experiment
 <table>
   <tr>
