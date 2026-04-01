@@ -88,7 +88,10 @@ The hand-designed terrains for evaluation.
 ## The real-world experiment
 ![result](./real_world.gif)
 <div align="center">
-Deploying the trained policy on a physical robot in a real-world scenario that was unseen during training. The two depth images at the bottom are the original depth image and the downsampled image that is fed into the policy network.
+Deploying the trained policy on a physical robot in a real-world scenario that was unseen during training. 
+  Top: the bird's-eye view. 
+  Bottom left: the original egocentric depth image. 
+  Bottom right: the downsampled depth image that is fed into the policy network.
 </div>
 
 
