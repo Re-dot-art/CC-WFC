@@ -5,6 +5,17 @@
 Diverse terrains generated via CC-WFC (Connectivity-Constrained Wave Function Collapse).
 </div>
 
+## Egocentric depth image in simulation
+![result](./depth_image.png)
+<div align="center">
+  Left: the original egocentric depth image. 
+  Right: the downsampled depth image that is fed into the policy network.
+</div>
+
+## The large-scale terrain experiment
+![result](./large_terrain_1.gif)
+![result](./large_terrain_3.gif)
+
 ## The real-world experiment
 ![result](./real_world.gif)
 <div align="center">
@@ -13,12 +24,6 @@ Deploying the trained policy on a physical robot in a real-world scenario that w
   Bottom left: the original egocentric depth image. 
   Bottom right: the downsampled depth image that is fed into the policy network.
 </div>
-
-
-## The large-scale terrain experiment
-![result](./large_terrain_1.gif)
-![result](./large_terrain_3.gif)
-
 
 ## The updated experimental results
 
