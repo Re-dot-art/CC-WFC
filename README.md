@@ -91,6 +91,17 @@ The hand-designed terrains for evaluation.
 Deploying the trained policy on a physical robot in a real-world scenario that was unseen during training.
 </div>
 
+## The large-scale terrain experiment
+<table>
+  <tr>
+    <td><video src="large_terrain_1.mp4" controls width="100%"></video></td>
+    <td><video src="large_terrain_2.mp4" controls width="100%"></video></td>
+    <td><video src="large_terrain_3.mp4" controls width="100%"></video></td>
+  </tr>
+</table>
+<div align="center">
+Deploying the policy trained on the small terrains (5*10) on a large terrain (10*20).
+</div>
 
 ## The JacNav experimental results
 ![result](./jaxnav_testset.png)
