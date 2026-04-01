@@ -16,19 +16,8 @@ Deploying the trained policy on a physical robot in a real-world scenario that w
 
 
 ## The large-scale terrain experiment
-<table>
-  <tr>
-    <td width="33%" align="center">
-      <img src="./large_terrain_1.gif" width="100%">
-    </td>
-    <td width="33%" align="center">
-      <img src="./large_terrain_2.gif" width="100%">
-    </td>
-    <td width="33%" align="center">
-      <img src="./large_terrain_3.gif" width="100%">
-    </td>
-  </tr>
-</table>
+![result](./large_terrain_1.gif)
+![result](./large_terrain_3.gif)
 
 
 ## The updated experimental results
