@@ -86,52 +86,11 @@ The hand-designed terrains for evaluation.
 </div>
 
 ## The real-world experiment
-![result](./real_world.mp4)
+![result](./real_world.gif)
 <div align="center">
-Deploying the trained policy on a physical robot in a real-world scenario that was unseen during training.
+Deploying the trained policy on a physical robot in a real-world scenario that was unseen during training. The two depth images at the bottom are the original depth image and the downsampled image that is fed into the policy network.
 </div>
 
-[![Demo 1]](./large_terrain_1.mp4)
-[![Demo 2]](./large_terrain_2.mp4)
-[![Demo 3]](./large_terrain_3.mp4)
-
-
-<table>
-  <tr>
-    <td width="33%">
-      <video controls muted width="100%">
-        <source src="./large_terrain_1.mp4" type="video/mp4">
-      </video>
-    </td>
-    <td width="33%">
-      <video controls muted width="100%">
-        <source src="./large_terrain_2.mp4" type="video/mp4">
-      </video>
-    </td>
-    <td width="33%">
-      <video controls muted width="100%">
-        <source src="./large_terrain_3.mp4" type="video/mp4">
-      </video>
-    </td>
-  </tr>
-</table>
-
-<table>
-  <tr>
-    <td><video src="./large_terrain_1.mp4" controls width="100%"></video></td>
-    <td><video src="./large_terrain_2.mp4" controls width="100%"></video></td>
-    <td><video src="./large_terrain_3.mp4" controls width="100%"></video></td>
-  </tr>
-</table>
-<div align="center">
-Deploying the policy trained on the small terrains (5*10) on a large terrain (10*20).
-</div>
-
-## The JacNav experimental results
-![result](./jaxnav_testset.png)
-<div align="center">
-The test set for JaxNav.
-</div>
 
 ## The large-scale terrain experiment
 <table>
@@ -148,6 +107,11 @@ The test set for JaxNav.
   </tr>
 </table>
 
+## The JaxNav experimental results
+![result](./jaxnav_testset.png)
+<div align="center">
+The test set for JaxNav.
+</div>
 
 ![result](./jaxnav_solve_rate_curve.png)
 <div align="center">
