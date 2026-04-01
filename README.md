@@ -85,3 +85,15 @@ Ablation Study of graph-guided reward.
 The hand-designed terrains for evaluation.
 </div>
 
+## The JacNav experimental results
+![result](./jaxnav_testset.png)
+<div align="center">
+The test set for JaxNav.
+</div>
+
+![result](./jaxnav_solve_rate_curve.png)
+<div align="center">
+Performance comparison of the proposed Structural UED and baselines on JaxNav.
+</div>
+
+
