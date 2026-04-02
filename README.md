@@ -1,5 +1,5 @@
 # Structural UED
-## The diverse terrains
+## Diverse terrains generated via CC-WFC
 ![result](./ccwfc_terrains.png)
 <div align="center">
 Diverse terrains generated via CC-WFC (Connectivity-Constrained Wave Function Collapse).
@@ -10,13 +10,14 @@ Diverse terrains generated via CC-WFC (Connectivity-Constrained Wave Function Co
 <div align="center">
   Left: the original egocentric depth image. 
   Right: the downsampled depth image (16 X 12) that is fed into the policy network.
+  The agent is tasked with mapless navigation over structurally complex 3D terrains under severe partial observability—it lacks any privileged global map or layout information, relying exclusively on the egocentric depth image (right) downsampled from the original depth image (left) and local proprioceptions. The detailed observation space is shown in Table 2. Mastering such high-dimensional, continuous control spatial reasoning tasks based on local observations is a notoriously challenging POMDP problem in reinforcement learning.
 </div>
 
 
-## The hand-designed terrains
+## The hand-designed terrains served as evaluation set
 ![result](./terrains.png)
 <div align="center">
-The hand-designed terrains for evaluation.
+The hand-designed terrains for evaluation. The newly reported multi-seed results on the IsaacLab visual navigation task are obtained using these hand-designed terrains as the evaluation set.
 </div>
 
 ## The updated experimental results on the hand-designed terrains
@@ -43,7 +44,7 @@ Ablation Study of connectivity constrain.
 Ablation Study of graph-guided reward.
 </div>
 
-## The large-scale terrain experiment
+## The quantitative results of the large-scale terrain validation.
 ![result](./large_terrain_1.gif)
 ![result](./large_terrain_3.gif)
 <div align="center">
@@ -61,7 +62,7 @@ Deploying the trained policy on a physical robot in a real-world scenario. In th
 
 
 
-## The JaxNav experimental results
+## The supplementary JaxNav experimental results
 ![result](./jaxnav_testset.png)
 <div align="center">
 The test set for JaxNav.
@@ -69,7 +70,7 @@ The test set for JaxNav.
 
 ![result](./jaxnav_solve_rate_curve.png)
 <div align="center">
-Performance comparison of the proposed Structural UED and baselines on JaxNav.
+Performance comparison of the proposed Structural UED and baselines on JaxNav. We migrated Structural UED to JaxNav, a distinct navigation benchmark with different dynamics and observations. In JaxNav, Structural UED still outperforms UED baselines in both learning efficiency and zero-shot generalization. Besides, reward guidance improves early training efficiency.
 </div>
 
 
@@ -100,6 +101,17 @@ Performance comparison of the proposed Structural UED and baselines on JaxNav.
 &nbsp;&nbsp;&nbsp;&nbsp;**end**  
 **end**
 
+## The observation space
+*Table 1. The observation space.* 
+|Observation Term|Dimensionality|
+|-|-:|
+|command (relative position of the goal)|3|
+|body orientation|3|
+|linear velocity|3|
+|angular velocity|3|
+|last action|3|
+|egocentric visual input (depth images)|192|
+
 ## Hyperparameters and experimental details
 *Table 2. Hyperparameters and experimental details.* 
 |Parameters| Visual Navigation in IsaacLab|JaxNav|
@@ -128,5 +140,4 @@ Performance comparison of the proposed Structural UED and baselines on JaxNav.
 |Regret Update Rate|20|1|
 |Greediness Temperature, $T$|1.0|1.0|
 |Grid Size|$10\times5$|$9\times9$|
-
 
