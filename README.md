@@ -9,23 +9,17 @@ Diverse terrains generated via CC-WFC (Connectivity-Constrained Wave Function Co
 ![result](./depth_image.png)
 <div align="center">
   Left: the original egocentric depth image. 
-  Right: the downsampled depth image that is fed into the policy network.
+  Right: the downsampled depth image (16 X 12) that is fed into the policy network.
 </div>
 
-## The large-scale terrain experiment
-![result](./large_terrain_1.gif)
-![result](./large_terrain_3.gif)
 
-## The real-world experiment
-![result](./real_world.gif)
+## The hand-designed terrains
+![result](./terrains.png)
 <div align="center">
-Deploying the trained policy on a physical robot in a real-world scenario that was unseen during training. 
-  Top: the bird's-eye view. 
-  Bottom left: the original egocentric depth image. 
-  Bottom right: the downsampled depth image that is fed into the policy network.
+The hand-designed terrains for evaluation.
 </div>
 
-## The updated experimental results
+## The updated experimental results on the hand-designed terrains
 
 ### The main experimental results are as follows:
 ![result](./eval_comparison_all_terrains.png)
@@ -49,11 +43,19 @@ Ablation Study of connectivity constrain.
 Ablation Study of graph-guided reward.
 </div>
 
-## The hand-designed terrains
-![result](./terrains.png)
+## The large-scale terrain experiment
+![result](./large_terrain_1.gif)
+![result](./large_terrain_3.gif)
+
+## The real-world experiment
+![result](./real_world.gif)
 <div align="center">
-The hand-designed terrains for evaluation.
+Deploying the trained policy on a physical robot in a real-world scenario that was unseen during training. 
+  Top: the bird's-eye view. 
+  Bottom left: the original egocentric depth image. 
+  Bottom right: the downsampled depth image that is fed into the policy network.
 </div>
+
 
 
 ## The JaxNav experimental results
