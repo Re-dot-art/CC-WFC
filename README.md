@@ -51,7 +51,7 @@ Demonstration of scalability of the proposed method via deploying the policy tra
 </div>
 
 ## The real-world experiment
-![result](./real_world.gif)
+![result](./real_world_new.gif)
 <div align="center">
 Deploying the trained policy on a physical robot in a real-world scenario. In the video, the robot navigates a completely unfamiliar, unmapped real-world environment relying strictly on egocentric depth images. Crucially, it demonstrates emergent spatial reasoning—autonomously exploring and re-routing to find new traversable areas when its initial area is physically blocked.
   Top: the bird's-eye view. 
