@@ -46,6 +46,9 @@ Ablation Study of graph-guided reward.
 ## The large-scale terrain experiment
 ![result](./large_terrain_1.gif)
 ![result](./large_terrain_3.gif)
+<div align="center">
+Demonstration of scalability of the proposed method via deploying the policy trained on the small terrains (5 X 10) to a large terrain (10 X 20).
+</div>
 
 ## The real-world experiment
 ![result](./real_world.gif)
