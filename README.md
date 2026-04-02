@@ -50,7 +50,7 @@ Ablation Study of graph-guided reward.
 ## The real-world experiment
 ![result](./real_world.gif)
 <div align="center">
-Deploying the trained policy on a physical robot in a real-world scenario that was unseen during training. 
+Deploying the trained policy on a physical robot in a real-world scenario. In the video, the robot navigates a completely unfamiliar, unmapped real-world environment relying strictly on egocentric depth images. Crucially, it demonstrates emergent spatial reasoning—autonomously exploring and re-routing to find new traversable areas when its initial area is physically blocked.
   Top: the bird's-eye view. 
   Bottom left: the original egocentric depth image. 
   Bottom right: the downsampled depth image that is fed into the policy network.
